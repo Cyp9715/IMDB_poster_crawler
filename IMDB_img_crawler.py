@@ -5,6 +5,7 @@ from selenium.common.exceptions import NoSuchElementException
 import urllib.parse
 
 T_const = []
+driver = webdriver
 
 class Base:
     def Tconst_List(self):
@@ -25,6 +26,7 @@ class Base:
 def crawling(number):
     global counter
     global T_const
+    global driver
 
     while True:
         try:
