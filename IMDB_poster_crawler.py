@@ -33,8 +33,8 @@ class Base:
         with counter.get_lock():
             counter.value += 1
             output = (T_const[number] + " | " + str(counter.value) + "/" + str(T_const.__len__()) + " | " +
-                      str(round(counter.value / T_const.__len__() * 100, 3)) + "%") if classify == 0 \
-                else (("-" * 75) + "\n" + T_const[number] + " | NoSuchElementException, make sure "
+                      str(round(counter.value / T_const.__len__() * 100, 3)) + "%") \
+                if classify == 0 else (("-" * 75) + "\n" + T_const[number] + " | NoSuchElementException, make sure "
                     "Website have a poster image." + "\n" + "https://" + link + "\n" + ("-" * 75))
             print(output)
 
