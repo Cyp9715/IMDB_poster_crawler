@@ -6,7 +6,7 @@ import urllib.parse
 
 # specify the location of file or variable, You don't have to do anything...
 cromdriver_location = './Basic_Data/chromedriver'
-tconstfile_location = './Basic_Data/Movie_Genres.tsv'
+tconstfile_location = './Basic_Data/Movie_code.tsv'
 savefile_location = './IMDB_img/'
 errorfile_location = './IMDB_img/error.tsv'
 
